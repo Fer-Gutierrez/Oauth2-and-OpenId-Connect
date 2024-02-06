@@ -15,6 +15,14 @@ namespace Marvin.IDP.Entities
         public string UserName { get; set; }
 
         [MaxLength(200)]
+        public string Email { get; set; }
+
+        [MaxLength(200)]
+        public string? SecurityCode { get; set; }
+
+        public DateTime SecurityCodeExpirationDate { get; set; }
+
+        [MaxLength(200)]
         public string Password {  get; set; }
 
         [Required]

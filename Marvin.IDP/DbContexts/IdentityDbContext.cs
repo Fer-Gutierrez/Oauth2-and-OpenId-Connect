@@ -27,6 +27,7 @@ namespace Marvin.IDP.DbContexts
                     Subject = "d860efca-22d9-47fd-8249-791ba61b07c7",
                     UserName = "David",
                     Password = "password",
+                    Email = "david@someprovider.com",
                     Active = true,
                 },
                 new User()
@@ -35,6 +36,7 @@ namespace Marvin.IDP.DbContexts
                     Password = "password",
                     Subject = "b7539694-97e7-4dfe-84da-b4256e1ff5c7",
                     UserName = "Emma",
+                    Email = "emma@someprovider.com",
                     Active = true
                 }
             );

@@ -1,5 +1,7 @@
 using Marvin.IDP.DbContexts;
+using Marvin.IDP.Entities;
 using Marvin.IDP.Services;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 
@@ -30,6 +32,7 @@ internal static class HostingExtensions
         });
 
         builder.Services.AddScoped<ILocalUserService, LocalUserService>();
+        builder.Services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
 
         return builder.Build();
     }
